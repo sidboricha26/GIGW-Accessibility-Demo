@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Citizen Services Portal</title>
+
+<style>
+body {
+  margin: 0;
+  background: #eeeeee;
+  color: #cccccc;
+  font-family: Arial;
+  font-size: 11px;
+  overflow-x: hidden;
+}
+
+* {
+  outline: none;
+}
+
+.header {
+  background: #aaaaaa;
+  color: #cccccc;
+  padding: 10px;
+}
+
+.nav {
+  background: #dddddd;
+  padding: 5px;
+}
+
+.nav a {
+  color: #cccccc;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.container {
+  width: 1200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 12px;
+}
+
+button {
+  background: #cccccc;
+  color: #aaaaaa;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  width: 250px;
+  font-size: 10px;
+  margin: 5px;
+  padding: 4px;
+}
+
+.footer {
+  background: #aaaaaa;
+  color: #cccccc;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- No semantic header -->
+
+<div class="header">
+  <h1>Citizen Services Portal</h1>
+  <p>Government Information and Public Services</p>
+</div>
+
+<!-- Navigation has no accessible label -->
+
+<div class="nav">
+  <a href="#">Home</a>
+  <a href="#">Services</a>
+  <a href="#">Apply Online</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- No skip link -->
+
+<div class="container">
+
+  <h1>Welcome</h1>
+
+  <p>
+    Welcome to the citizen services website.
+    Find information about government services.
+  </p>
+
+  <!-- Image without alternative text -->
+
+  <img
+    src="https://placehold.co/600x250/cccccc/ffffff?text=Services"
+    width="600">
+
+  <!-- Incorrect heading hierarchy -->
+
+  <h5>Available Services</h5>
+
+  <div onclick="alert('Service selected')">
+    Apply for Government Schemes
+  </div>
+
+  <div onclick="alert('Status selected')">
+    Check Application Status
+  </div>
+
+  <h6>Online Application Form</h6>
+
+  <!-- No proper labels -->
+
+  <form onsubmit="alert('Submitted'); return false;">
+
+    <input type="text" placeholder="Enter Name">
+
+    <input type="email" placeholder="Enter Email">
+
+    <select>
+      <option>Select Service</option>
+      <option>Government Scheme</option>
+      <option>Certificate</option>
+    </select>
+
+    <textarea placeholder="Enter Message"></textarea>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+  <!-- Unclear link text -->
+
+  <a href="#">Click here</a>
+
+</div>
+
+<div class="footer">
+  Copyright 2026 Citizen Services Portal
+</div>
+
+<script>
+// Mouse-only interaction example
+
+document.querySelector(".header").onclick = function() {
+  alert("Header clicked!");
+};
+</script>
+
+</body>
+</html>
