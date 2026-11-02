@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIGW 3.0 Accessibility Demo</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172b4d;
+  text-align: center;
+  padding: 50px 20px;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+a {
+  display: block;
+  padding: 15px;
+  margin: 20px 0;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.compliant { background: #087443; }
+.noncompliant { background: #b42318; }
+a:focus-visible {
+  outline: 4px solid #e69b00;
+  outline-offset: 4px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>GIGW 3.0 Accessibility Demonstration</h1>
+  <p>Compare accessible and non-accessible website implementations.</p>
+
+  <a class="compliant" href="compliant/">
+    Visit Compliant Website
+  </a>
+
+  <a class="noncompliant" href="non-compliant/">
+    Visit Non-Compliant Website
+  </a>
+</div>
+</body>
+</html>
